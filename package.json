@@ -1,0 +1,17 @@
+{
+  "name": "@moim/api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "이게모임 Spring Boot API",
+  "scripts": {
+    "dev": "gradlew.bat bootRun",
+    "dev:debug": "gradlew.bat bootRun --debug-jvm",
+    "build": "gradlew.bat build",
+    "build:clean": "gradlew.bat clean build",
+    "test": "gradlew.bat test",
+    "test:watch": "gradlew.bat test --continuous",
+    "clean": "gradlew.bat clean",
+    "start": "java -jar build/libs/api-1.0.0.jar",
+    "bootJar": "gradlew.bat bootJar"
+  }
+}
