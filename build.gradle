@@ -16,8 +16,9 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
     }
 }
 
@@ -44,6 +45,9 @@ dependencies {
 
     // Development
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // API Documentation
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0'
 
     // Testing
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
