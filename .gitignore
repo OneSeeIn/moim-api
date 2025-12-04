@@ -1,6 +1,7 @@
 .env
 .gradle
 build
-
+bin
 
 temp
+.vscode
