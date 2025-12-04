@@ -3,5 +3,9 @@
 build
 bin
 
-temp
 .vscode
+# CLAUDE
+.claude
+CLAUDE.md
+
+temp
